@@ -17,7 +17,6 @@ function App() {
 
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (responce) => {
-        console.log(responce);
         const weatherResponse = await responce[0].json()
         const forecastResponse = await responce[1].json()
 
@@ -27,9 +26,6 @@ function App() {
       .catch((err) => console.log(err));
 
   }
-
-  console.log(currentWeather);
-  console.log(forecast);
 
   return (
     <div className="container">

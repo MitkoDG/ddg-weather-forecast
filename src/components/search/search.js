@@ -13,7 +13,6 @@ const Search = ({onSearchChange}) => {
             .then(response => response.json())
 
             .then(response => {
-                console.log(response);
                 return {
                     options: response.data.map((city) => {
                         return {
