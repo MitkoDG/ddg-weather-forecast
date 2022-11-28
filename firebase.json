@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "worldwide-weather-forecast",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
